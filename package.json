@@ -1,0 +1,27 @@
+{
+  "name": "@cv9t/prettier-config",
+  "version": "0.0.1",
+  "description": "Prettier configuration",
+  "main": ".prettierrc.js",
+  "files": [
+    ".prettierrc.js",
+    ".prettierignore"
+  ],
+  "author": "Sviatoslav Nazin <sviatoslavnazin@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cv9t/prettier-config.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "format": "prettier . --write",
+    "prep": "pnpm format && git add .",
+    "release": "pnpm publish"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
